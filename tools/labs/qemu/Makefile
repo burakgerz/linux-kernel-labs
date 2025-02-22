@@ -1,5 +1,5 @@
 QEMU_DISPLAY ?= none
-ARCH ?= x86
+ARCH ?= x86_64
 ifeq ($(ARCH),x86)
 b = b
 endif

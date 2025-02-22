@@ -3,6 +3,7 @@ KDIR ?= $(shell realpath $(PWD)/../..)
 LABS ?= $(shell cd templates && find -mindepth 1 -maxdepth 1 -type d)
 MODS = $(shell cd templates && find $(LABS) -mindepth 1 -name Kbuild | xargs dirname)
 TODO ?= 0
+ARCH=x86_64
 
 include qemu/Makefile
 
